@@ -24,12 +24,6 @@ navLinks.forEach((link) => {
   });
 });
 
-const currentPage = window.location.hash;
-if (currentPage) {
-  const activeLink = document.querySelector(`a[href="${currentPage}"]`);
-  if (activeLink) activeLink.classList.add("border-gray-400", "border-b-2", "text-gray-400");
-}
-
 function skillCardInteraction() {
   const skillCards = document.querySelectorAll(".skill-card");
 
